@@ -1,0 +1,701 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\dashboard\\analyzeasset.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\dashboard\\analyzeasset.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\analyzeassetviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\analyzeassetviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\dashboard\\addorderview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\dashboard\\addorderview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\dashboard\\listassetsview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\dashboard\\listassetsview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\listassetsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\listassetsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\dashboard\\addassetview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\dashboard\\addassetview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\controllers\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\controllers\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\models\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\models\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\dashboard\\assetdetailsview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\dashboard\\assetdetailsview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\panel\\roleindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\panel\\roleindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\panel\\rolelistusersview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\panel\\rolelistusersview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\panel\\userlistroleview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\panel\\userlistroleview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\dashboard\\portfolioindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\dashboard\\portfolioindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\dashboard\\listordersview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\dashboard\\listordersview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\portfolioordersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\portfolioordersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\models\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\models\\portfolio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\models\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\models\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\models\\irole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\models\\irole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\roleaddviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\roleaddviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\roledetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\roledetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\roleuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\roleuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\tradeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\tradeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\dashboard\\editportfolioview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\dashboard\\editportfolioview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\updatesigneduserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\updatesigneduserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\portfoliodetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\portfoliodetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\dashboard\\addportfolioview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\dashboard\\addportfolioview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\panel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\panel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\panel\\userindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\panel\\userindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\panel\\editroleview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\panel\\editroleview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\views\\panel\\addroleview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\views\\panel\\addroleview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\usersignupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\usersignupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\usersigninviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\usersigninviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\viewmodels\\userdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\viewmodels\\userdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|c:\\users\\crawler\\source\\repos\\smartportfolio\\smartportfolio\\migrations\\20241217163712_mig111.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D9910-8572-4548-8BCD-3EC1A3EFFD83}|SmartPortfolio\\SmartPortfolio.csproj|solutionrelative:smartportfolio\\migrations\\20241217163712_mig111.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "SmartPortfolio\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAYCAAAAAAAAAAAmwAkCAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T20:54:58.695Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnalyzeAsset.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\AnalyzeAsset.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Dashboard\\AnalyzeAsset.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\AnalyzeAsset.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Dashboard\\AnalyzeAsset.cshtml",
+              "ViewState": "AgIAALkAAAAAAAAAAAAgwM4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T18:32:46.616Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnalyzeAssetViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\AnalyzeAssetViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\AnalyzeAssetViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\AnalyzeAssetViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\AnalyzeAssetViewModel.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwBgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T18:29:21.637Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddOrderView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\AddOrderView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Dashboard\\AddOrderView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\AddOrderView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Dashboard\\AddOrderView.cshtml",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAawKcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T17:47:29.824Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PanelController.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Controllers\\PanelController.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Controllers\\PanelController.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Controllers\\PanelController.cs",
+              "RelativeToolTip": "SmartPortfolio\\Controllers\\PanelController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAmwD4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T12:32:25.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T16:17:12.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Asset.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Models\\Asset.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Models\\Asset.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Models\\Asset.cs",
+              "RelativeToolTip": "SmartPortfolio\\Models\\Asset.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T12:47:09.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T20:03:13.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T12:48:48.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ListAssetsView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\ListAssetsView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Dashboard\\ListAssetsView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\ListAssetsView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Dashboard\\ListAssetsView.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAmwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T18:25:34.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListAssetsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\ListAssetsViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\ListAssetsViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\ListAssetsViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\ListAssetsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:29:46.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddAssetView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\AddAssetView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Dashboard\\AddAssetView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\AddAssetView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Dashboard\\AddAssetView.cshtml",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAmwKIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T17:35:38.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RoleIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\RoleIndex.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Panel\\RoleIndex.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\RoleIndex.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Panel\\RoleIndex.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T14:52:03.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AssetDetailsView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\AssetDetailsView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Dashboard\\AssetDetailsView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\AssetDetailsView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Dashboard\\AssetDetailsView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T16:35:32.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RoleListUsersView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\RoleListUsersView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Panel\\RoleListUsersView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\RoleListUsersView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Panel\\RoleListUsersView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T20:54:33.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20241217163712_mig111.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Migrations\\20241217163712_mig111.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Migrations\\20241217163712_mig111.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Migrations\\20241217163712_mig111.cs",
+              "RelativeToolTip": "SmartPortfolio\\Migrations\\20241217163712_mig111.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T16:37:12.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserListRoleView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\UserListRoleView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Panel\\UserListRoleView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\UserListRoleView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Panel\\UserListRoleView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T16:42:43.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Models\\Order.cs",
+              "RelativeToolTip": "SmartPortfolio\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T15:58:26.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PortfolioIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\PortfolioIndex.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Dashboard\\PortfolioIndex.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\PortfolioIndex.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Dashboard\\PortfolioIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T19:45:05.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PortfolioOrdersViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\PortfolioOrdersViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\PortfolioOrdersViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\PortfolioOrdersViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\PortfolioOrdersViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T21:01:08.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ListOrdersView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\ListOrdersView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Dashboard\\ListOrdersView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\ListOrdersView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Dashboard\\ListOrdersView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T20:31:09.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SmartPortfolio\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:03:49.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\appsettings.json",
+              "RelativeDocumentMoniker": "SmartPortfolio\\appsettings.json",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\appsettings.json",
+              "RelativeToolTip": "SmartPortfolio\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-17T16:25:39.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Portfolio.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Models\\Portfolio.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Models\\Portfolio.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Models\\Portfolio.cs",
+              "RelativeToolTip": "SmartPortfolio\\Models\\Portfolio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T12:09:07.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RoleAddViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\RoleAddViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\RoleAddViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\RoleAddViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\RoleAddViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T20:00:39.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IRole.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Models\\IRole.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Models\\IRole.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Models\\IRole.cs",
+              "RelativeToolTip": "SmartPortfolio\\Models\\IRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T15:58:23.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IUser.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Models\\IUser.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Models\\IUser.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Models\\IUser.cs",
+              "RelativeToolTip": "SmartPortfolio\\Models\\IUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T15:58:24.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RoleDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\RoleDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\RoleDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\RoleDetailsViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\RoleDetailsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:56:52.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RoleUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\RoleUserViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\RoleUserViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\RoleUserViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\RoleUserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:56:51.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TradeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\TradeViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\TradeViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\TradeViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\TradeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:56:48.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SmartPortfolio\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwGsAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T17:41:48.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EditPortfolioView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\EditPortfolioView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Dashboard\\EditPortfolioView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\EditPortfolioView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Dashboard\\EditPortfolioView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T11:55:14.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PortfolioDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\PortfolioDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\PortfolioDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\PortfolioDetailsViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\PortfolioDetailsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T16:23:01.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UpdateSignedUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\UpdateSignedUserViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\UpdateSignedUserViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\UpdateSignedUserViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\UpdateSignedUserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T21:01:05.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AddPortfolioView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\AddPortfolioView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Dashboard\\AddPortfolioView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Dashboard\\AddPortfolioView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Dashboard\\AddPortfolioView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T11:57:41.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\Index.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Panel\\Index.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\Index.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Panel\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T12:24:03.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\UserIndex.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Panel\\UserIndex.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\UserIndex.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Panel\\UserIndex.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T12:48:52.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AddRoleView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\AddRoleView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Panel\\AddRoleView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\AddRoleView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Panel\\AddRoleView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T12:53:29.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EditRoleView.cshtml",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\EditRoleView.cshtml",
+              "RelativeDocumentMoniker": "SmartPortfolio\\Views\\Panel\\EditRoleView.cshtml",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\Views\\Panel\\EditRoleView.cshtml",
+              "RelativeToolTip": "SmartPortfolio\\Views\\Panel\\EditRoleView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T17:36:25.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UserSignUpViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\UserSignUpViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\UserSignUpViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\UserSignUpViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\UserSignUpViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T17:02:45.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserSignInViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\UserSignInViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\UserSignInViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\UserSignInViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\UserSignInViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T17:00:59.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UserDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\UserDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "SmartPortfolio\\ViewModels\\UserDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\crawler\\source\\repos\\SmartPortfolio\\SmartPortfolio\\ViewModels\\UserDetailsViewModel.cs",
+              "RelativeToolTip": "SmartPortfolio\\ViewModels\\UserDetailsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T17:56:16.23Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+﻿@model SmartPortfolio.ViewModels.UserSignUpViewModel
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Ekranı</title>
+    <style>
+        .signup-background {
+            background-image: url('/assets/loginbgimg.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 100vh; 
+            width: 100%; 
+            position: absolute; 
+            top: 0;
+            left: 0;
+            z-index: -1; 
+        }
+
+        .signup-container {
+            max-width: 40%;
+            margin-top: 5%;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body class="signup-background">
+    <center>
+        <div class="signup-container list-group-item-light fw-bold text-start">
+            <h3 class="mb-3">Kayıt Ol</h3>
+            <h5 class="text-danger">@TempData["Alert"]</h5>
+            <form method="post" asp-action="Submit" asp-controller="Home">
+                @Html.AntiForgeryToken()
+                <div class="mb-2">
+                    <label asp-for="Username" class="form-label"></label>
+                    <input asp-for="Username" class="form-control" required />
+                </div>
+
+                <div class="mb-2">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" inputmode="email" class="form-control" required />
+                </div>
+
+                <div class="mb-2">
+                    <label asp-for="PhoneNumber" class="form-label"></label>
+                    <input asp-for="PhoneNumber" inputmode="tel" class="form-control" />
+                </div>
+
+                <div class="mb-2">
+                    <label asp-for="Password" class="form-label"></label>
+                    <input asp-for="Password" class="form-control" required />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label asp-for="ConfirmPassword" class="form-label"></label>
+                    <input asp-for="ConfirmPassword" class="form-control" required />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary">Kaydol</button>
+                </div>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

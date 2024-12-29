@@ -1,0 +1,869 @@
+﻿@{
+    string Date = ViewBag.Date.ToString();
+    string ClosingTl = ViewBag.ClosingTl.ToString();
+    string ClosingUsd = ViewBag.ClosingUsd.ToString();
+    string HighTl = ViewBag.HighTl.ToString();
+    string HighUsd = ViewBag.HighUsd.ToString();
+    string LowTl = ViewBag.LowTl.ToString();
+    string LowUsd = ViewBag.LowUsd.ToString();
+    string VolumeTl = ViewBag.VolumeTl.ToString();
+    string VolumeUsd = ViewBag.VolumeUsd.ToString();
+    string Xu100Tl = ViewBag.Xu100Tl.ToString();
+    string Xu100Usd = ViewBag.Xu100Usd.ToString();
+
+    var assetId = ViewBag.AssetId;
+    var symbolName = ViewBag.SymbolName;
+    var symbolType = ViewBag.SymbolType;
+    var closedPrice = ViewBag.ClosedPrice.ToString();
+    var fk = ViewBag.FK.ToString();
+    var fdFavok = ViewBag.FdFavok.ToString();
+    var fdSell = ViewBag.FdSell.ToString();
+    var pdDd = ViewBag.PdDd.ToString();
+    var lastPrice = ViewBag.LastPrice.ToString();
+    var fuzzy = ViewBag.Fuzzy.ToString();
+    var linear = ViewBag.Linear.ToString();
+
+    // Indicators
+    string Ema20 = ViewBag.Ema20.ToString();
+    string Ema50 = ViewBag.Ema50.ToString();
+    string SPlusEma = ViewBag.SPlusEma.ToString();
+    string SMinusEma = ViewBag.SMinusEma.ToString();
+
+    string Sma = ViewBag.Sma.ToString();
+    string Sd = ViewBag.Sd.ToString();
+    string Ub = ViewBag.Ub.ToString();
+    string Lb = ViewBag.Lb.ToString();
+    string SPlusSma = ViewBag.SPlusSma.ToString();
+    string SMinusSma = ViewBag.SMinusSma.ToString();
+
+    string Rsi = ViewBag.Rsi.ToString();
+    string SPlusRsi = ViewBag.SPlusRsi.ToString();
+    string SMinusRsi = ViewBag.SMinusRsi.ToString();
+
+    string Macd = ViewBag.Macd.ToString();
+    string SLine = ViewBag.SLine.ToString();
+    string SPlusMacd = ViewBag.SPlusMacd.ToString();
+    string SMinusMacd = ViewBag.SMinusMacd.ToString();
+
+    string PerD = ViewBag.PerD.ToString();
+    string PerK = ViewBag.PerK.ToString();
+
+    string St = ViewBag.St.ToString();
+    string StDirect = ViewBag.StDirect.ToString();
+    string StLong = ViewBag.StLong.ToString();
+    string StShort = ViewBag.StShort.ToString();
+    string SPlusSt = ViewBag.SPlusSt.ToString();
+    string SMinusSt = ViewBag.SMinusSt.ToString();
+
+    string Adx = ViewBag.Adx.ToString();
+    string PlusAdx = ViewBag.PlusAdx.ToString();
+    string MinusAdx = ViewBag.MinusAdx.ToString();
+    string SPlusAdx = ViewBag.SPlusAdx.ToString();
+    string SMinusAdx = ViewBag.SMinusAdx.ToString();
+
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Analysis</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <!-- Overview Section -->
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h3>@symbolName</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p><strong>Symbol Type:</strong> @symbolType</p>
+                        <p><strong>Last Price:</strong> @lastPrice</p>
+                        <p><strong>Closed Price:</strong> @closedPrice</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>F/K:</strong> @fk</p>
+                        <p><strong>FD/FAVOK:</strong> @fdFavok</p>
+                        <p><strong>Fuzzy:</strong> @fuzzy</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>FD/Satislar:</strong> @fdSell</p>
+                        <p><strong>PD/DD:</strong> @pdDd</p>
+                        <p><strong>Linear:</strong> @linear</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Title - Left aligned (default) -->
+                    <h4 id="chartTitle100" class="mr-3">Xu100</h4>
+
+                    <!-- Switch - Right aligned -->
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="dataToggle1">
+                        <label class="custom-control-label" for="dataToggle1">USD</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <canvas id="chart100" width="400" height="200"></canvas>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Title - Left aligned (default) -->
+                    <h4 id="chartTitle" class="mr-3">Price and Volume Analysis</h4>
+
+                    <!-- Switch - Right aligned -->
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="dataToggle">
+                        <label class="custom-control-label" for="dataToggle">USD</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <canvas id="myChart" width="400" height="200"></canvas>
+                <canvas id="chart2" width="400" height="80" class="mt-4"></canvas>
+                
+            </div>
+        </div>
+        <br />
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h4>Super Trend</h4>
+            </div>
+            <div class="card-body">
+                <canvas id="chartSt" width="400" height="200" class="mt-4"></canvas>
+                <canvas id="chartStSignal" width="400" height="80" class="mt-4"></canvas>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h4>BOLLINGER</h4>
+            </div>
+            <div class="card-body">
+                <canvas id="chartSma" width="400" height="200" class="mt-4"></canvas>
+                <canvas id="chartSmaSignal" width="400" height="80" class="mt-4"></canvas>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h4>RSI</h4>
+            </div>
+            <div class="card-body">
+                <canvas id="chartRsi" width="400" height="80"></canvas>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h4>EMA</h4>
+            </div>
+            <div class="card-body">
+                <canvas id="chartEma" width="400" height="80" class="mt-4"></canvas>
+                <canvas id="chartEmaSignal" width="400" height="80" class="mt-4"></canvas>
+            </div>
+        </div>
+        
+        <div class="card mt-4">
+            <div class="card-header">
+                <h4>PER</h4>
+            </div>
+            <div class="card-body">
+                <canvas id="chartPer" width="400" height="80" class="mt-4"></canvas>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h4>MACD</h4>
+            </div>
+            <div class="card-body">
+                <canvas id="chartMacd" width="400" height="110" class="mt-4"></canvas>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h4>ADX</h4>
+            </div>
+            <div class="card-body">
+                <canvas id="chartAdx" width="400" height="110" class="mt-4"></canvas>
+                <canvas id="chartAdxSignal" width="400" height="80" class="mt-4"></canvas>
+            </div>
+        </div>
+        <br />
+
+    </div>
+    <br />
+    <br />
+
+    <script>
+        var highDataTl = @Html.Raw(HighTl);
+        var volumeDataTl = @Html.Raw(VolumeTl);
+        var xu100Tl = @Html.Raw(Xu100Tl);
+
+        var highDataUsd = @Html.Raw(HighUsd);
+        var volumeDataUsd = @Html.Raw(VolumeUsd);
+        var xu100Usd = @Html.Raw(Xu100Usd);
+        
+
+        var ema20 = @Html.Raw(Ema20);
+        var ema50 = @Html.Raw(Ema50);
+        var sPlusEma = @Html.Raw(SPlusEma);
+        var sMinusEma = @Html.Raw(SMinusEma);
+
+        var rsi = @Html.Raw(Rsi);
+        var sPlusRsi = @Html.Raw(SPlusRsi);
+        var sMinusRsi = @Html.Raw(SMinusRsi);
+
+        var sma = @Html.Raw(Sma);
+        var sd = @Html.Raw(Sd);
+        var ub = @Html.Raw(Ub);
+        var lb = @Html.Raw(Lb);
+        var sPlusSma = @Html.Raw(SPlusSma);
+        var sMinusSma = @Html.Raw(SMinusSma);
+
+        var macd = @Html.Raw(Macd);
+        var sLine = @Html.Raw(SLine);
+        var sPlusMacd = @Html.Raw(SPlusMacd);
+        var sMinusMacd = @Html.Raw(SMinusMacd);
+
+        var perD = @Html.Raw(PerD);
+        var perK = @Html.Raw(PerK);
+
+        var st = @Html.Raw(St);
+        var stDirect = @Html.Raw(StDirect);
+        var stLong = @Html.Raw(StLong);
+        var stShort = @Html.Raw(StShort);
+        var sPlusSt = @Html.Raw(SPlusSt);
+        var sMinusSt = @Html.Raw(SMinusSt);
+
+        var adx = @Html.Raw(Adx);
+        var plusAdx = @Html.Raw(PlusAdx);
+        var minusAdx = @Html.Raw(MinusAdx);
+        var sPlusAdx = @Html.Raw(SPlusAdx);
+        var sMinusAdx = @Html.Raw(SMinusAdx);
+
+
+            // string St = ViewBag.St.ToString();
+            // string StDirect = ViewBag.StDirect.ToString();
+            // string StLong = ViewBag.StLong.ToString();
+            // string StShort = ViewBag.StShort.ToString();
+            // string SPlusSt = ViewBag.SPlusSt.ToString();
+            // string SMinusSt = ViewBag.SMinusSt.ToString();
+
+            // string Adx = ViewBag.Adx.ToString();
+            // string PlusAdx = ViewBag.PlusAdx.ToString();
+            // string MinusAdx = ViewBag.MinusAdx.ToString();
+            // string SPlusAdx = ViewBag.SPlusAdx.ToString();
+            // string SMinusAdx = ViewBag.SMinusAdx.ToString();
+
+        var ctxEma = document.getElementById('chartEma').getContext('2d');
+        var chartEma = new Chart(ctxEma, {
+            type: 'line',
+            data: {
+                labels: Object.keys(ema20),
+                datasets: [
+                    {
+                        label: 'Ema20',
+                        data: Object.values(ema20),
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Ema50',
+                        data: Object.values(ema50),
+                        borderColor: 'rgba(180, 0, 0, 1)',
+                        backgroundColor: 'rgba(180, 0, 0, 0.1)',
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Value'
+                        }
+                    }
+                }
+            }
+        });
+
+        var ctxEmaSignal = document.getElementById('chartEmaSignal').getContext('2d');
+        var chartEmaSignal = new Chart(ctxEmaSignal, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(sPlusEma),
+                datasets: [
+                    {
+                        label: 'Plus',
+                        data: Object.values(sPlusEma),
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Minus',
+                        data: Object.values(sMinusEma),
+                        borderColor: 'rgba(180, 0, 0, 1)',
+                        backgroundColor: 'rgba(180, 0, 0, 0.1)',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Value'
+                        }
+                    }
+                }
+            }
+        });
+
+
+
+
+
+
+
+        var ctxSma = document.getElementById('chartSma').getContext('2d');
+        var chartSma = new Chart(ctxSma, {
+            type: 'line',
+            data: {
+                labels: Object.keys(highDataTl),
+                datasets: [
+                    {
+                        label: 'High Price (TL)',
+                        data: Object.values(highDataTl),
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'SMA',
+                        data: Object.values(sma),
+                        borderColor: 'rgba(255, 153, 0, 1)',
+                        backgroundColor: 'rgba(255, 153, 0, 1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Up Band',
+                        data: Object.values(ub),
+                        borderColor: 'rgba(0, 102, 204, 1)',
+                        backgroundColor: 'rgba(0, 102, 204, 1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Low Band',
+                        data: Object.values(lb),
+                        borderColor: 'rgba(0, 102, 204, 1)',
+                        backgroundColor: 'rgba(0, 102, 204, 1)',
+                        tension: 0.1
+                    }
+                ]
+            }
+        });
+
+        var ctxSmaSignal = document.getElementById('chartSmaSignal').getContext('2d');
+        var chartSmaSignal = new Chart(ctxSmaSignal, {
+            type: 'line',
+            data: {
+                labels: Object.keys(sd),
+                datasets: [
+                    {
+                        label: 'Signal',
+                        data: Object.values(sd),
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.1)',
+                        tension: 0.1
+                    }
+                ]
+            }
+        });
+
+
+        var ctxMacd = document.getElementById('chartMacd').getContext('2d');
+        var chartMacd = new Chart(ctxMacd, {
+            type: 'line',
+            data: {
+                labels: Object.keys(macd),
+                datasets: [
+                    {
+                        label: 'Macd',
+                        data: Object.values(macd),
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'SLine',
+                        data: Object.values(sLine),
+                        borderColor: 'rgba(180, 0, 0, 1)',
+                        backgroundColor: 'rgba(180, 0, 0, 0.1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Up Band',
+                        data: Object.values(sPlusMacd),
+                        borderColor: 'rgba(35, 192, 35, 1)',
+                        backgroundColor: 'rgba(35, 192, 35, 0.1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Low Band',
+                        data: Object.values(sMinusMacd),
+                        borderColor: 'rgba(180, 0, 0, 1)',
+                        backgroundColor: 'rgba(180, 0, 0, 0.1)',
+                        tension: 0.1
+                    }
+                ]
+            }
+        });
+
+        var ctxPer = document.getElementById('chartPer').getContext('2d');
+        var chartPer = new Chart(ctxPer, {
+            type: 'line',
+            data: {
+                labels: Object.keys(perD),
+                datasets: [
+                    {
+                        label: '%D',
+                        data: Object.values(perD),
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: '%K',
+                        data: Object.values(perK),
+                        borderColor: 'rgba(180, 0, 0, 1)',
+                        backgroundColor: 'rgba(180, 0, 0, 0.1)',
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Value'
+                        }
+                    }
+                }
+            }
+        });
+
+        var ctxSt = document.getElementById('chartSt').getContext('2d');
+        var chartSt = new Chart(ctxSt, {
+            type: 'line',
+            data: {
+                labels: Object.keys(highDataTl),
+                datasets: [
+                    {
+                        label: 'Price',
+                        data: Object.values(highDataTl),
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Long',
+                        data: Object.values(stLong),
+                        borderColor: 'rgba(35, 192, 35, 1)',
+                        backgroundColor: 'rgba(35, 192, 35, 0.1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Short',
+                        data: Object.values(stShort),
+                        borderColor: 'rgba(180, 0, 0, 1)',
+                        backgroundColor: 'rgba(180, 0, 0, 0.1)',
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Value'
+                        }
+                    }
+                }
+            }
+        });
+
+
+        var ctxStSignal = document.getElementById('chartStSignal').getContext('2d');
+        var chartStSignal = new Chart(ctxStSignal, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(sPlusSt),
+                datasets: [
+                    {
+                        label: 'Plus',
+                        data: Object.values(sPlusSt),
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Minus',
+                        data: Object.values(sMinusSt),
+                        borderColor: 'rgba(180, 0, 0, 1)',
+                        backgroundColor: 'rgba(180, 0, 0, 0.1)',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Value'
+                        }
+                    }
+                }
+            }
+        });
+
+        var ctxAdx = document.getElementById('chartAdx').getContext('2d');
+        var chartAdx = new Chart(ctxAdx, {
+            type: 'line',
+            data: {
+                labels: Object.keys(adx),
+                datasets: [
+                    {
+                        label: 'ADX',
+                        data: Object.values(adx),
+                        borderColor: 'rgba(0, 102, 204, 1)',
+                        backgroundColor: 'rgba(0, 102, 204, 1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Plus Adx',
+                        data: Object.values(plusAdx),
+                        borderColor: 'rgba(35, 192, 35, 1)',
+                        backgroundColor: 'rgba(35, 192, 35, 0.1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Minus Adx',
+                        data: Object.values(minusAdx),
+                        borderColor: 'rgba(180, 0, 0, 1)',
+                        backgroundColor: 'rgba(180, 0, 0, 0.1)',
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Value'
+                        }
+                    }
+                }
+            }
+        });
+
+        var ctxAdxSignal = document.getElementById('chartAdxSignal').getContext('2d');
+        var chartAdxSignal = new Chart(ctxAdxSignal, {
+            type: 'line',
+            data: {
+                labels: Object.keys(sPlusAdx),
+                datasets: [
+                    {
+                        label: 'Plus',
+                        data: Object.values(sPlusAdx),
+                        borderColor: 'rgba(35, 192, 35, 1)',
+                        backgroundColor: 'rgba(35, 192, 35, 0.1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Minus',
+                        data: Object.values(sMinusAdx),
+                        borderColor: 'rgba(180, 0, 0, 1)',
+                        backgroundColor: 'rgba(180, 0, 0, 0.1)',
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Value'
+                        }
+                    }
+                }
+            }
+        });
+
+
+
+        var ctxRsi = document.getElementById('chartRsi').getContext('2d');
+        var chartRsi = new Chart(ctxRsi, {
+            type: 'line',
+            data: {
+                labels: Object.keys(rsi),
+                datasets: [
+                    {
+                        label: 'RSI',
+                        data: Object.values(rsi),
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'RSI'
+                        }
+                    }
+                }
+            }
+        });
+
+
+
+
+
+        var ctx100 = document.getElementById('chart100').getContext('2d');
+        var chart100 = new Chart(ctx100, {
+            type: 'line',
+            data: {
+                labels: Object.keys(xu100Tl),
+                datasets: [{
+                    label: 'Xu100 (TL)',
+                    data: Object.values(xu100Tl),
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Price (TL)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart 1 (Line Chart)
+        var ctx1 = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: Object.keys(highDataTl),
+                datasets: [{
+                    label: 'High Price (TL)',
+                    data: Object.values(highDataTl),
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Price (TL)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart 2 (Bar Chart)
+        var ctx2 = document.getElementById('chart2').getContext('2d');
+        var chart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(volumeDataTl),
+                datasets: [{
+                    label: 'Volume (TL)',
+                    data: Object.values(volumeDataTl),
+                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                    borderColor: 'rgba(153, 102, 255, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Volume (TL)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Toggle between TL and USD data for Price and Volume charts
+        document.getElementById('dataToggle').addEventListener('change', function () {
+            var isChecked = this.checked;
+
+            if (isChecked) {
+                // Switch to USD Data
+                myChart.data.datasets[0].data = Object.values(highDataUsd);
+                myChart.data.datasets[0].label = 'High Price (USD)';
+                myChart.options.scales.y.title.text = 'Price (USD)';
+                document.getElementById('chartTitle').textContent = 'Price and Volume Analysis (USD)';
+
+                chart2.data.datasets[0].data = Object.values(volumeDataUsd);
+                chart2.data.datasets[0].label = 'Volume (USD)';
+                chart2.options.scales.y.title.text = 'Volume (USD)';
+            } else {
+                // Switch to TL Data
+                myChart.data.datasets[0].data = Object.values(highDataTl);
+                myChart.data.datasets[0].label = 'High Price (TL)';
+                myChart.options.scales.y.title.text = 'Price (TL)';
+                document.getElementById('chartTitle').textContent = 'Price and Volume Analysis (TL)';
+
+                chart2.data.datasets[0].data = Object.values(volumeDataTl);
+                chart2.data.datasets[0].label = 'Volume (TL)';
+                chart2.options.scales.y.title.text = 'Volume (TL)';
+            }
+            myChart.update();
+            chart2.update();
+        });
+
+        // Toggle between TL and USD data for Xu100 chart
+        document.getElementById('dataToggle1').addEventListener('change', function () {
+            var isChecked = this.checked;
+
+            if (isChecked) {
+                // Switch to USD Data
+                chart100.data.datasets[0].data = Object.values(xu100Usd);
+                chart100.data.datasets[0].label = 'Xu100 (USD)';
+                chart100.options.scales.y.title.text = 'Price (USD)';
+                document.getElementById('chartTitle100').textContent = 'Xu100 (USD)';
+            } else {
+                // Switch to TL Data
+                chart100.data.datasets[0].data = Object.values(xu100Tl);
+                chart100.data.datasets[0].label = 'Xu100 (TL)';
+                chart100.options.scales.y.title.text = 'Price (TL)';
+                document.getElementById('chartTitle100').textContent = 'Xu100 (TL)';
+            }
+            chart100.update();
+        });
+    </script>
+
+</body>
+
+</html>

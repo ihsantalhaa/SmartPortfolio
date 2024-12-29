@@ -1,0 +1,85 @@
+﻿@model List<SmartPortfolio.ViewModels.PortfolioDetailsViewModel>
+<div class="row pt-4 mb-5">
+    <div class="col-9">
+        <h3 class="text-success">All Portfolios</h3>
+    </div>
+    <div class="col-12 text-lg-end">
+        <a asp-controller="Dashboard" asp-action="AddPortfolioView" class="btn btn-outline-success">Add Portfolio</a>
+    </div>
+    <br />
+    <br />
+    @if (Model != null && Model.Count() > 0)
+    {
+        @foreach (var item in Model)
+        {
+            <div id="deleteConfirmModal-@item.Id" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content alert alert-light">
+                        @* alert-dismissible *@
+                        <div class="modal-header">
+                            <h5 class="modal-title">Are You Sure?</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                            <form method="post" asp-controller="Dashboard" asp-action="DeletePortfolio" asp-route-Id="@item.Id">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-outline-danger">Confirm Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="safeRedirect('@Url.Action("ListAssetsView", "Dashboard", new { id = @item.Id })')"
+                 style="cursor: pointer;"
+                 class="card text-white bg-primary mt-3"
+                 width="100%">
+                <div style="display: flex; justify-content: space-between;" class="card-title mt-3 mb-0">
+                    <div>
+                        <h4 class="text-success mt-lg-2 ms-lg-2 mb-0">
+                            @item.PorfolioName
+                        </h4>
+                    </div>
+                    <div style="display: flex; justify-content: flex-end;">
+                        <a asp-controller="Dashboard" asp-action="EditPortfolioView" asp-route-Id="@item.Id"
+                           class="btn btn-success mx-1">E</a>
+                        <a asp-controller="Dashboard" asp-action="ListOrdersView" asp-route-Id="@item.Id"
+                           class="btn btn-success mx-1">O</a>
+                        <button data-bs-toggle="modal" data-bs-target="#deleteConfirmModal-@item.Id" class="btn btn-danger">X</button>
+                    </div>
+                </div>
+                <div class="card-body mb-3">
+                    <p class="card-text">@item.PorfolioDescription</p>
+                </div>
+            </div>
+            
+        }
+    }
+    else
+    {
+        <br />
+        <p><b>Not Found Result</b></p>
+    }
+</div>
+
+<script>
+    function safeRedirect(url) {
+        // Butonlara tıklanmadıysa yönlendir
+        if (!window.event.target.closest('button, a')) {
+            // URL'yi doğrula (opsiyonel ek güvenlik)
+            if (isValidUrl(url)) {
+                window.location.href = url;
+            }
+        }
+    }
+
+    function isValidUrl(url) {
+        try {
+            // URL'nin geçerli olup olmadığını kontrol et
+            new URL(url, window.location.origin);
+            return true;
+        } catch {
+            return false;
+        }
+    }
+</script>

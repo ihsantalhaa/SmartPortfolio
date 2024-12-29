@@ -1,0 +1,31 @@
+﻿@model List<PortfolioOrdersViewModel>
+
+<div class="row pt-4 mb-5">
+    <div class="col-9">
+        <h3 class="text-success">@TempData["PortfolioName"]</h3>
+    </div>
+    <br />
+    <br />
+    @if (Model != null && Model.Count() > 0)
+    {
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Symbol Name: @item.SymbolName</h5>
+                        <h5 class="card-title">Order Type: @item.OrderType</h5>
+                        <p class="card-text"><strong>Amount:</strong> @item.Amount</p>
+                        <p class="card-text"><strong>Price:</strong> @item.Price</p>
+                        <p class="card-text"><strong>Date:</strong> @item.Date.ToString("yyyy-MM-dd")</p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <br />
+        <p><b>Not Found Result</b></p>
+    }
+</div>

@@ -1,0 +1,30 @@
+﻿@model SmartPortfolio.ViewModels.PortfolioDetailsViewModel
+
+<form method="post" asp-action="AddPortfolio" asp-controller="Dashboard">
+    <div class="container py-5 fw-bold">
+        <div class="form-group">
+            <h3 class="text-center text-success mb-4">Add Portfolio</h3>
+        </div>
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-4"></div>
+        
+        <div class="form-group row mb-3">
+            <label for="PorfolioName" class="col-sm-3 col-form-label">Portfolio Name</label>
+            <div class="col-sm-9">
+                <input asp-for="@Model.PorfolioName" type="text" class="form-control" id="PorfolioName" placeholder="Enter portfolio name" />
+                <span asp-validation-for="@Model.PorfolioName" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row mb-3">
+            <label for="PorfolioDescription" class="col-sm-3 col-form-label">Portfolio Description</label>
+            <div class="col-sm-9">
+                <textarea asp-for="@Model.PorfolioDescription" class="form-control" id="PorfolioDescription" rows="3" placeholder="Enter portfolio description"></textarea>
+                <span asp-validation-for="@Model.PorfolioDescription" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group d-flex justify-content-end">
+            <input type="submit" class="btn btn-success" value="Add Portfolio" />
+        </div>
+    </div>
+</form>

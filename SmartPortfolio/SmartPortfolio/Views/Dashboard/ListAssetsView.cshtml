@@ -1,0 +1,87 @@
+﻿@model List<ListAssetsViewModel>
+<div class="container pt-4">
+    <div class="row mb-3">
+        <div class="col-9">
+            <h3 class="text-success">@ViewBag.Message Assets</h3>
+        </div>
+        <div class="col-3 text-end">
+            <a asp-controller="Dashboard" asp-action="AddAssetView" asp-route-Id="@TempData["PortfolioId"]" class="btn btn-outline-success">Add Asset</a>
+        </div>
+    </div>
+
+    @if (Model != null && Model.Count() > 0)
+    {
+        @foreach (var item in Model)
+        {
+            <!-- Modal for Delete Confirmation -->
+            <div id="deleteConfirmModal-@item.AssetId" class="modal fade" tabindex="-1" aria-labelledby="deleteConfirmModalLabel-@item.AssetId" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="deleteConfirmModalLabel-@item.AssetId">Are You Sure?</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Do you really want to delete this asset? This action cannot be undone.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <form method="post" asp-controller="Dashboard" asp-action="DeleteAsset" asp-route-AssetId="@item.AssetId" asp-route-PortfolioId="@TempData["PortfolioId"]">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-danger">Confirm Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asset Card -->
+            <div onclick="safeRedirect('@Url.Action("AnalyzeAsset", "Dashboard", new { Id = @item.AssetId })')"
+                 style="cursor: pointer;" class="card text-white bg-primary mb-3">
+                <div class="card-header d-flex justify-content-between">
+                    <h4 class="text-success mb-0">@item.SymbolName</h4>
+                    <div>
+                        <a asp-controller="Dashboard" asp-action="AssetDetailsView" asp-route-AssetId="@item.AssetId" asp-route-PortfolioId="@TempData["PortfolioId"]" class="btn btn-outline-light mx-1">Details</a>
+                        <a asp-controller="Dashboard" asp-action="AddOrderView" asp-route-AssetId="@item.AssetId" class="btn btn-outline-light mx-1">Order</a>
+                        <button data-bs-toggle="modal" data-bs-target="#deleteConfirmModal-@item.AssetId" class="btn btn-outline-light">Delete</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p><strong>Position State:</strong> @item.State</p>
+                    <p><strong>State Value:</strong> @item.StateValue</p>
+                    <p><strong>State Amount Value:</strong> @item.StateAmountValue</p>
+                    <p><strong>State Ratio:</strong> @item.StateRatio</p>
+                    <p class="card-text">@item.SymbolType</p>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="alert alert-warning" role="alert">
+            <strong>Not Found Result</strong>
+        </div>
+    }
+</div>
+
+<script>
+    function safeRedirect(url) {
+        // Button click wasn't made
+        if (!window.event.target.closest('button, a')) {
+            // Validate the URL (optional additional security)
+            if (isValidUrl(url)) {
+                window.location.href = url;
+            }
+        }
+    }
+
+    function isValidUrl(url) {
+        try {
+            // Check if the URL is valid
+            new URL(url, window.location.origin);
+            return true;
+        } catch {
+            return false;
+        }
+    }
+</script>

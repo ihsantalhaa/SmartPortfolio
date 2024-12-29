@@ -1,0 +1,56 @@
+﻿@model SmartPortfolio.ViewModels.UserSignInViewModel
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Ekranı</title>
+    <style>
+        .signin-background {
+            background-image: url('/assets/loginbgimg.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 100vh; 
+            width: 100%; 
+            position: absolute; 
+            top: 0;
+            left: 0;
+            z-index: -1; 
+        }
+
+        .signin-container {
+            max-width: 30%;
+            margin-top: 20%;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="signin-background">
+    <center>
+        <div class="signin-container list-group-item-light">
+            <h3>Login</h3>
+            <h5 class="text-danger">@TempData["Message"]</h5>
+            <form method="post" asp-controller="Home" asp-action="Login">
+                @Html.AntiForgeryToken()
+                <div class="form-group">
+                    <input asp-for="Email" class="form-control" placeholder="E-Mail" required />
+                </div>
+                <br />
+
+                <div class="form-group">
+                    <input asp-for="Password" class="form-control" placeholder="Password" required />
+                </div>
+                <br />
+                
+                <button type="submit" class="btn btn-primary btn-block mb-auto">Giriş Yap</button>
+                <a class="btn btn-success btn-block" asp-controller="Home" asp-action="SubmitView">Üye Ol</a>
+                @* <div class="text-center mt-3">
+                    <a asp-action="">Şifremi unuttum?</a>
+                </div> *@
+            </form>
+        </div>
+    </center>
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+﻿@model List<SmartPortfolio.ViewModels.RoleDetailsViewModel>
+<div class="row pt-4">
+    <br />
+    <div class="col-9">
+        <h3 class="text-success">All Roles</h3>
+    </div>
+    <div class="col-12 text-lg-end">
+        <a asp-controller="Panel" asp-action="AddRoleView" class="btn btn-outline-success">Add Roles</a>
+    </div>
+    <br />
+    <br />
+    @if (Model != null && Model.Count() > 0)
+    {
+        <table class="table table-hover table-responsive" width="100%">
+            <thead>
+                <tr>
+                    <th scope="col">Role Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="table-default">
+                        <td scope="row" width="80%">@item.RoleName</td>
+                        <td width="20%">
+                            <div id="deleteConfirmModal-@item.Id" class="modal fade" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content alert alert-dismissible alert-light">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Are You Sure?</h5>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                                            <form method="post" asp-controller="Panel" asp-action="DeleteRole" asp-route-Id="@item.Id">
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="btn btn-outline-danger">Confirm Delete</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-100 btn-group" role="group">
+                                <a asp-controller="Panel" asp-action="EditRoleView" asp-route-Id="@item.Id"
+                                   class="btn btn-outline-success mx-1">Edit</a>
+                                <a asp-controller="Panel" asp-action="RoleListUsersView" asp-route-Id="@item.Id"
+                                   class="btn btn-outline-success mx-1">Users</a>
+                                <a data-bs-toggle="modal" data-bs-target="#deleteConfirmModal-@item.Id" class="btn btn-outline-danger p-2">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <br />
+        <p><b>Not Found Result</b></p>
+    }
+</div>

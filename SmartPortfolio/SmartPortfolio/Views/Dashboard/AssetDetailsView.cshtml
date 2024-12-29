@@ -1,0 +1,34 @@
+﻿@model List<Order>
+<div class="row pt-4 mb-5">
+    <div class="col-9">
+        <h3 class="text-success">@TempData["AssetName"] Details</h3>
+    </div>
+    <div class="col-12 text-lg-end">
+        <a asp-controller="Dashboard" asp-action="ListAssetsView" asp-route-Id="@TempData["PortfolioId"]" class="btn btn-outline-success">Back Portfolio</a>
+    </div>
+    <br />
+    <br />
+    @if (Model != null && Model.Count() > 0)
+    {
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Order Type: @item.OrderType</h5>
+                        <p class="card-text"><strong>Amount:</strong> @item.Amount</p>
+                        <p class="card-text"><strong>Price:</strong> @item.Price</p>
+                        <p class="card-text"><strong>Date:</strong> @item.Date.ToString("yyyy-MM-dd")</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        }
+    }
+    else
+    {
+        <br />
+        <p><b>Not Found Result</b></p>
+    }
+</div>

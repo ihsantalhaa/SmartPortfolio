@@ -1,0 +1,235 @@
+﻿@* @model List<AddAssetViewModel>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Hisse Listesi</h2>
+
+    <!-- Filtreleme ve Sıralama -->
+    <div class="d-flex justify-content-between mb-4">
+        <!-- Sembol Arama -->
+        <input type="text" class="form-control shadow-sm w-50" id="searchInput" placeholder="Hisse sembolü arayın..." onkeyup="filterAssets()">
+
+        <!-- Sıralama Seçeneği -->
+        <select class="form-control w-25" id="sortSelect" onchange="sortAssets()">
+            <option value="lastPrice">Son Fiyat</option>
+            <option value="fk">FK</option>
+            <option value="fdFavok">FD / Favok</option>
+            <option value="pdDd">PD / DD</option>
+            <option value="fdSell">Fd Sell</option>
+        </select>
+    </div>
+
+    <!-- Varlıklar Listesi -->
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="assetList">
+        @foreach (var item in Model)
+        {
+            <div class="col asset-card" data-symbol="@item.SymbolName" data-lastprice="@item.LastPrice" data-fk="@item.FK" data-fdfavok="@item.FdFavok" data-pdd="@item.PdDd" data-fdsell="@item.FdSell">
+                <!-- Hisse Kartı -->
+                <div class="card shadow-sm border-0 rounded-lg p-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">@item.SymbolName</h5>
+                        <p class="card-text"><strong>Son Fiyat:</strong> @item.LastPrice</p>
+
+                        <!-- Diğer Bilgiler -->
+                        <div class="more-info">
+                            <div class="row">
+                                <div class="col">
+                                    <p><strong>FK:</strong> @item.FK</p>
+                                    <p><strong>FD / Favok:</strong> @item.FdFavok</p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>PD / DD:</strong> @item.PdDd</p>
+                                    <p><strong>Fd Sell:</strong> @item.FdSell</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="assetForm" action="@Url.Action("AddAsset", "Dashboard")" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="PortfolioId" value="@item.PortfolioId">
+                        <input type="hidden" name="SymbolName" value="@item.SymbolName">
+                        <input type="hidden" name="LastPrice" value="@item.LastPrice">
+                        <button type="submit" class="btn btn-success w-100 mt-3" id="submitFormButton">Add To Portfolio</button>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    // Function to filter assets based on the symbol name
+    function filterAssets() {
+        const searchInput = document.getElementById('searchInput').value.toLowerCase();
+        const assetCards = document.querySelectorAll('.asset-card');
+
+        assetCards.forEach(card => {
+            const symbol = card.getAttribute('data-symbol').toLowerCase();
+            if (symbol.includes(searchInput)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Function to sort assets based on selected criteria
+    function sortAssets() {
+        const sortBy = document.getElementById('sortSelect').value;
+        const assetList = document.getElementById('assetList');
+        const assetCards = Array.from(assetList.getElementsByClassName('asset-card'));
+
+        assetCards.sort((a, b) => {
+            const aValue = parseFloat(a.getAttribute('data-' + sortBy));
+            const bValue = parseFloat(b.getAttribute('data-' + sortBy));
+
+            return aValue - bValue; // Ascending order
+        });
+
+        // Reattach sorted cards to the container
+        assetCards.forEach(card => assetList.appendChild(card));
+    }
+</script>
+
+<style>
+    /* Default styling for the asset cards */
+    .asset-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    }
+
+        /* Hover effect for the card */
+        .asset-card:hover {
+            transform: translateY(-10px); /* Slightly lifts the card */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow to create depth */
+        }
+</style>
+ *@
+
+
+ @model List<AddAssetViewModel>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Hisse Listesi</h2>
+
+    <!-- Filtreleme ve Sıralama -->
+    <div class="d-flex justify-content-between mb-4">
+        <!-- Sembol Arama -->
+        <input type="text" class="form-control shadow-sm w-50" id="searchInput" placeholder="Hisse sembolü arayın..." onkeyup="filterAssets()">
+
+        <!-- Sıralama Seçeneği -->
+        <select class="form-control w-25" id="sortSelect" onchange="sortAssets()">
+            <option value="lastPrice">Son Fiyat</option>
+            <option value="fk">FK</option>
+            <option value="fdFavok">FD / Favok</option>
+            <option value="pdDd">PD / DD</option>
+            <option value="fdSell">Fd Sell</option>
+        </select>
+    </div>
+
+    <!-- Varlıklar Listesi -->
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="assetList">
+        @foreach (var item in Model)
+        {
+            <div class="col asset-card" data-symbol="@item.SymbolName" data-lastprice="@item.LastPrice" data-fk="@item.FK" data-fdfavok="@item.FdFavok" data-pdd="@item.PdDd" data-fdsell="@item.FdSell">
+                <!-- Hisse Kartı -->
+                <div class="card shadow-sm border-0 rounded-lg p-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">@item.SymbolName</h5>
+                        <p class="card-text"><strong>Son Fiyat:</strong> <span class="price">@item.LastPrice</span></p>
+
+                        <!-- Diğer Bilgiler -->
+                        <div class="more-info">
+                            <div class="row">
+                                <div class="col">
+                                    <p><strong>FK:</strong> <span class="fk">@item.FK</span></p>
+                                    <p><strong>FD / Favok:</strong> <span class="fdFavok">@item.FdFavok</span></p>
+                                </div>
+                                <div class="col">
+                                    <p><strong>PD / DD:</strong> <span class="pdDd">@item.PdDd</span></p>
+                                    <p><strong>Fd Sell:</strong> <span class="fdSell">@item.FdSell</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="assetForm" action="@Url.Action("AddAsset", "Dashboard")" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="PortfolioId" value="@item.PortfolioId">
+                        <input type="hidden" name="SymbolName" value="@item.SymbolName">
+                        <input type="hidden" name="LastPrice" value="@item.LastPrice">
+                        <button type="submit" class="btn btn-success w-100 mt-3" id="submitFormButton">Add To Portfolio</button>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    // Function to filter assets based on the symbol name
+    function filterAssets() {
+        const searchInput = document.getElementById('searchInput').value.toLowerCase();
+        const assetCards = document.querySelectorAll('.asset-card');
+
+        assetCards.forEach(card => {
+            const symbol = card.getAttribute('data-symbol').toLowerCase();
+            if (symbol.includes(searchInput)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Function to sort assets based on selected criteria
+    function sortAssets() {
+        const sortBy = document.getElementById('sortSelect').value;
+        const assetList = document.getElementById('assetList');
+        const assetCards = Array.from(assetList.getElementsByClassName('asset-card'));
+
+        assetCards.sort((a, b) => {
+            const aValue = parseFloat(a.getAttribute('data-' + sortBy));
+            const bValue = parseFloat(b.getAttribute('data-' + sortBy));
+
+            return aValue - bValue; // Ascending order
+        });
+
+        // Reattach sorted cards to the container
+        assetCards.forEach(card => assetList.appendChild(card));
+    }
+
+    // Function to replace -1 with "Veri Yok"
+    window.onload = function () {
+        const priceElements = document.querySelectorAll('.price');
+        const fkElements = document.querySelectorAll('.fk');
+        const fdFavokElements = document.querySelectorAll('.fdFavok');
+        const pdDdElements = document.querySelectorAll('.pdDd');
+        const fdSellElements = document.querySelectorAll('.fdSell');
+
+        replaceIfNegative(priceElements);
+        replaceIfNegative(fkElements);
+        replaceIfNegative(fdFavokElements);
+        replaceIfNegative(pdDdElements);
+        replaceIfNegative(fdSellElements);
+    }
+
+    // Function to check if value is -1 and replace with "Veri Yok"
+    function replaceIfNegative(elements) {
+        elements.forEach(element => {
+            if (parseFloat(element.textContent) === -1) {
+                element.textContent = "Veri Yok";
+            }
+        });
+    }
+</script>
+
+<style>
+    /* Default styling for the asset cards */
+    .asset-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    }
+
+        /* Hover effect for the card */
+        .asset-card:hover {
+            transform: translateY(-10px); /* Slightly lifts the card */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow to create depth */
+        }
+</style>

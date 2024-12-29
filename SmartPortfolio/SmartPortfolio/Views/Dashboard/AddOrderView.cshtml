@@ -1,0 +1,245 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "Trading Platform";
+}
+
+<style>
+    :root {
+        --primary-blue: #2962ff;
+        --success-green: #00c853;
+        --danger-red: #ff1744;
+        --bg-color: #f8fafc;
+        --card-bg: #ffffff;
+        --text-dark: #1e293b;
+    }
+
+    body {
+        background-color: var(--bg-color);
+    }
+
+    .trading-layout {
+        padding: 1.5rem;
+        margin: 0 auto;
+    }
+
+    .chart-container {
+        background: var(--card-bg);
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        margin-bottom: 2rem;
+        height: 800px; /* Daha büyük grafik yüksekliği */
+    }
+
+    .trading-card {
+        background: var(--card-bg);
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 0 auto;
+        max-height: 400px; /* Form için maksimum yükseklik */
+    }
+
+    .trading-card-header {
+        background: var(--primary-blue);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .trading-card-body {
+        padding: 1rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .market-info {
+        flex: 1;
+        background: rgba(41, 98, 255, 0.04);
+        border-radius: 8px;
+        padding: 1rem;
+    }
+
+    .order-form {
+        flex: 2;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .form-column {
+        flex: 1;
+    }
+
+    .info-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+    .info-label {
+        color: var(--text-dark);
+        font-weight: 500;
+    }
+
+    .info-value {
+        font-weight: 600;
+    }
+
+        .info-value.price {
+            color: var(--success-green);
+        }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--text-dark);
+        font-weight: 500;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: all 0.2s;
+    }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(41, 98, 255, 0.1);
+        }
+
+    .actions {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .btn {
+        flex: 1;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .btn-buy {
+        background: var(--success-green);
+        color: white;
+    }
+
+    .btn-sell {
+        background: var(--danger-red);
+        color: white;
+    }
+
+    .btn:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+    }
+
+    .text-danger {
+        color: var(--danger-red);
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+    }
+</style>
+
+<div class="trading-layout">
+    <!-- Chart Section - Daha büyük -->
+    <div class="chart-container">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget" style="height: 100%;"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                    "autosize": true,
+                    "symbol": "@ViewData["SymbolName"]",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "allow_symbol_change": true,
+                    "calendar": false,
+                    "support_host": "https://www.tradingview.com"
+                }
+            </script>
+        </div>
+    </div>
+
+    <!-- Trading Form Section - Daha geniş ve kısa -->
+    <div class="trading-card">
+        <div class="trading-card-header">
+            @ViewData["SymbolName"] Trading
+        </div>
+        <div class="trading-card-body">
+            <div class="market-info">
+                <div class="info-row">
+                    <span class="info-label">Last Price</span>
+                    <span class="info-value price">@ViewData["LastPrice"]</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Available Amount</span>
+                    <span class="info-value">@ViewData["Amount"]</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Total Cost</span>
+                    <span class="info-value">@ViewData["Cost"]</span>
+                </div>
+            </div>
+
+            <form method="post" asp-action="AddOrder" asp-controller="Dashboard" class="order-form">
+                <input type="hidden" asp-for="AssetId" value="@ViewData["AssetId"]" />
+
+                <div class="form-column">
+                    <div class="form-group">
+                        <label asp-for="Amount" class="form-label">Order Amount</label>
+                        <input asp-for="Amount" type="number"
+                               class="form-control"
+                               placeholder="Enter amount"
+                               min="0"
+                               step="0.01" />
+                        <span asp-validation-for="Amount" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-column">
+                    <div class="form-group">
+                        <label asp-for="Price" class="form-label">Price</label>
+                        <input asp-for="Price" type="number"
+                               class="form-control"
+                               placeholder="Enter price"
+                               min="0"
+                               step="0.01" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-column">
+                    <div class="actions">
+                        <input type="submit" class="btn btn-buy" name="actionType" value="Buy" />
+                        <input type="submit" class="btn btn-sell" name="actionType" value="Sell" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
